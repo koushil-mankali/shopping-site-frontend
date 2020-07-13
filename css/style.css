@@ -1,0 +1,181 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+/*------------------------------------------------------Header----------------------------------------------------*/
+#bd-title{
+    font-size:25px;
+    font-family: 'Lobster', cursive;
+}
+@media all and (min-width:900px){
+    .mrl{
+        margin-left:200px;
+    }
+    .reg2{
+        position:absolute;
+        right:50px;
+    }
+    .reg1{
+        position:absolute;
+        right:200px;
+    }
+}
+/*------------------------------------------------------Header----------------------------------------------------*/
+
+/*------------------------------------------------------Nav----------------------------------------------------*/
+@media all and (min-width:991px){
+    .nav2{
+        background-color:#f2f2f2;
+        height:30px;
+        overflow: hidden;
+    }
+    .nav2 > ul >li{
+        display:inline-block;
+        margin-left:50px;
+    }
+    .nav2 > ul >li > a:hover{
+        text-decoration: none;
+        list-style: none;
+    }
+    nav > ul >li >a{
+        font-size:15px;
+        font-weight:bold;
+        color:black;
+    }
+    #one{
+        margin-left:200px;
+    
+    }
+}
+@media all and (max-width:1280px){
+    .nav2{
+        display:none;
+    }
+}
+/*------------------------------------------------------Nav----------------------------------------------------*/
+/*------------------------------------------------------Cards----------------------------------------------------*/
+.card-icon{
+    height:30px;
+    width:30px;
+    background-color:#333333;
+    border-radius:50%;
+}
+/*------------------------------------------------------Cards----------------------------------------------------*/
+
+/*------------------------------------------------------Banner----------------------------------------------------*/
+
+.banner-link{
+    text-decoration: none;
+    list-style:none;
+}
+/*------------------------------------------------------Banner----------------------------------------------------*/
+
+/*------------------------------------------------------Card2---------------------------------------------------->*/
+.cd-h4{
+    font-weight:bold; 
+    margin:5px; 
+    padding-top:5px;
+    padding-left:20px; 
+    padding-bottom:20px;
+    background-color:#00DED1;
+    max-width:330px;
+    max-height:40px;
+    border-radius:30px;
+}
+
+.txt-sz{
+    position: relative;
+}
+.bb-btn{
+    position: absolute;
+    bottom:10px;
+}
+@media all and (max-width:576px){
+    .card2sty{
+        height:350px;
+    }
+}
+@media all and (min-width:577px){
+    .card2sty{
+        height:450px;
+    }
+}
+
+.card2sty:hover{
+    background-color:#F8F8FF;
+}
+/*------------------------------------------------------Card2----------------------------------------------------*/
+
+
+
+@media all and (max-width:577px){
+    .mm{
+        margin-top:10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------Footer------------------------------------------------- */
+.footdes{
+    position: relative;
+    bottom:0;
+    width:100%;
+    height:350px;
+      
+}
+.footer-1{
+    height:300px;
+}
+.footer-2{
+    height:75px;
+    border-top:1px solid white;
+}
+.footer-2-div{
+    margin-left:100px; margin-top:10px;
+}
+.footer-2-div > a{
+    margin-left:20px;
+}
+.footer-2-div > a >i{
+    font-size: 30px;
+}
+.foocol{
+    min-height:300px;
+    background-color: #172337; 
+}
+@media all and (min-width:576px){
+    .foocol{
+        border-right: 2px dotted white;
+    }
+}
+@media all and (max-width:575px){
+    .foocol{
+        border-bottom: 2px dotted white;
+    }
+    .foocol:last-child{
+        border-bottom: none;
+    }
+}
+.foocol-2{
+    background-color: #172337; 
+}
+.foocol:last-child{
+    border-right: none;
+}
+.fh4{
+    margin-top:10px;
+    text-transform: uppercase;
+}
+/*------------------------------------------------Footer------------------------------------------------- */
