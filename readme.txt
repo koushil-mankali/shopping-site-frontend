@@ -1,1 +1,2 @@
-It's and one page online shopping site only front end.
+Single page Online Shopping Site (only front end). 
+Feel Free to Contribute and Engage
