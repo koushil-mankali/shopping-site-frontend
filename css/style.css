@@ -6,7 +6,7 @@
 /*------------------------------------------------------Header----------------------------------------------------*/
 #bd-title{
     font-size:25px;
-    font-family: 'Lobster', cursive;
+    font-family: '', cursive;
 }
 @media all and (min-width:900px){
     .mrl{
