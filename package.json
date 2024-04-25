@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.6.1",
+    "popper.js": "^1.16.1"
+  }
+}
