@@ -2,7 +2,7 @@
     margin:0px;
     padding:0px;
     box-sizing:border-box;
-}
+}   
 /*------------------------------------------------------Header----------------------------------------------------*/
 #bd-title{
     font-size:25px;
@@ -56,11 +56,12 @@
 /*------------------------------------------------------Nav----------------------------------------------------*/
 /*------------------------------------------------------Cards----------------------------------------------------*/
 .card-icon{
-    height:30px;
+    height: 30px;
     width:30px;
     background-color:#333333;
     border-radius:50%;
 }
+
 /*------------------------------------------------------Cards----------------------------------------------------*/
 
 /*------------------------------------------------------Banner----------------------------------------------------*/
@@ -87,33 +88,45 @@
 .txt-sz{
     position: relative;
 }
+.bb-btn1{
+    position: relative;
+    bottom: -15px;
+    margin: 10 auto;
+  border-radius: 50px; /* Adjust the radius for your desired roundness */
+  padding: 10px 25px; /* Adjust padding as needed */
+}
+
 .bb-btn{
     position: absolute;
-    bottom:10px;
+    bottom: 15px;
+    margin: 0 auto;
+  border-radius: 50px; /* Adjust the radius for your desired roundness */
+  padding: 10px 20px; /* Adjust padding as needed */
 }
-@media all and (max-width:576px){
+@media all and (max-width:500px){
     .card2sty{
-        height:350px;
+        height:200px;
+
     }
 }
-@media all and (min-width:577px){
+@media all and (min-width:500px){
     .card2sty{
-        height:450px;
+        height:285px;
     }
 }
 
 .card2sty:hover{
-    background-color:#F8F8FF;
+    background-color:#bbca90;
 }
 /*------------------------------------------------------Card2----------------------------------------------------*/
 
 
 
-@media all and (max-width:577px){
+@media all and (max-width:500px){
     .mm{
         margin-top:10px;
     }
-}
+}   
 
 
 
@@ -129,7 +142,7 @@
 
 /*------------------------------------------------Footer------------------------------------------------- */
 .footdes{
-    position: relative;
+    position: static;
     bottom:0;
     width:100%;
     height:350px;
