@@ -62,6 +62,14 @@
     border-radius:50%;
 }
 
+.bb-btn1{
+    position: relative;
+    bottom: -15px;
+    margin: 10 auto;
+  border-radius: 50px; /* Adjust the radius for your desired roundness */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
 /*------------------------------------------------------Cards----------------------------------------------------*/
 
 /*------------------------------------------------------Banner----------------------------------------------------*/
@@ -85,46 +93,45 @@
     border-radius:30px;
 }
 
-.txt-sz{
-    position: relative;
+.cd-title{
+    font: 1em Arial, sans-serif;
+    text-align: center;
 }
-.bb-btn1{
-    position: relative;
-    bottom: -15px;
-    margin: 10 auto;
-  border-radius: 50px; /* Adjust the radius for your desired roundness */
-  padding: 10px 25px; /* Adjust padding as needed */
+
+.txt-sz{
+    position: absolute;
+    align-content: center;
 }
 
 .bb-btn{
     position: absolute;
-    bottom: 15px;
-    margin: 0 auto;
+    bottom: 0px;
+    margin: 10 auto ;
   border-radius: 50px; /* Adjust the radius for your desired roundness */
   padding: 10px 20px; /* Adjust padding as needed */
 }
-@media all and (max-width:500px){
+@media all and (max-width:768px){
     .card2sty{
-        height:200px;
-
+        height:250px;
     }
 }
-@media all and (min-width:500px){
+@media all and (min-width:768px){
     .card2sty{
-        height:285px;
+        height:250px;
     }
 }
 
 .card2sty:hover{
     background-color:#bbca90;
 }
+
 /*------------------------------------------------------Card2----------------------------------------------------*/
 
 
 
 @media all and (max-width:500px){
     .mm{
-        margin-top:10px;
+        margin: top 10px;
     }
 }   
 
@@ -183,6 +190,7 @@
 }
 .foocol-2{
     background-color: #172337; 
+    height: fit-content;
 }
 .foocol:last-child{
     border-right: none;
