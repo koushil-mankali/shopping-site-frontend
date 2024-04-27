@@ -13,20 +13,27 @@
 <body>
   <!------------------------------------------------------Header---------------------------------------------------->
     <nav class="navbar navbar-expand-lg navbar-light bg-white" style="max-height:70px;z-index:10;">
+        <button id="menu-button">&#9776;</button> 
+        <nav id="side-menu">
+            <button id="close-button">X</button>
+            <!--  Side menu will go here -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Palm Flowers.html">Palm Flowers</a></li>
+                <li><a href="#">Graden Flowers</a></li>
+                <li><a href="#">Sticks</a></li>
+                <li><a href="#">Wall Hanging</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">flower basket</a></li>
+                <li><a href="#">deco rose</a></li>
+                <li><a href="#">bamboo</a></li>
+                <li><a href="#">Offer Zone</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
         <a class="navbar-brand" href="index.html"><span id="bd-title"><img src="images/logo.jpg" style="max-height:50px;">Hopeshore</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navdp" aria-controls="navdp" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse bg-white" style="width:100%;" id="navdp">
-          <form class="form-inline bg-white  my-2 my-lg-0 mrl">
-            <input class="form-control mr-sm-2 srh-w bg-white" style="width:500px;" type="search" placeholder="Search..." aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-          <button type="button" class="btn btn-danger reg1">Sign In</button>
-          <button type="button" class="btn btn-info reg2"><i class="fas fa-shopping-cart"> Cart</i>
-            &nbsp;<span class="badge badge-light">0</span>
-          </button>
-        </div>
       </nav>
       <nav class="nav2">
         <ul class="ul2">
@@ -366,11 +373,27 @@
             <div class="row">
               <div class="col-sm-4 foocol">
                 <h4 class="text-white fh4">About Us</h4>
-                <p class="text-white">"Welcome to Hope Shore, a charitable school nestled in the serene coastal town of Kadalundi. Dedicated to holistic child development, we provide quality education in a nurturing environment. Our personalized approach fosters academic, emotional, and social growth, empowering students with skills for success. Our curriculum encourages curiosity, critical thinking, and creativity, while instilling values of empathy, integrity, and respect. Set amidst picturesque landscapes, our tranquil setting and dedicated faculty create a supportive atmosphere where children thrive. Hope Shore is more than a school; it's a beacon of hope, guiding children towards a promising future." </p>
+                <p class="text-white">"Hopeshore Special School located at Kadalundi was founded with the noble objective 
+                  of empowering the children with special needs who are sidelined from the mainstream of 
+                  society. The school provides education and therapy to specially-abled children hailing from 
+                  the lower socio-economic groups. The team at Hopeshore is very supportive and sensitive 
+                  to the needs of an alarming number of children with special needs who are the victims of 
+                  negligence. Such children are doubly disadvantaged due to the lack of parental awareness 
+                  about their needs, social stigma and poor financial access to special education and therapy. 
+                  Hopeshore Charitable Trust is a nononprofit organisation dedicated to the rehabilitation 
+                  of the children with special needs. The trust aims at enabling these children to lead a dignified 
+                  life by catering to their special needs. It has proposed to take up various charitable initiatives 
+                  to provide services to such children and prevent apathy towards them.
+                  Hopeshore Special School is at the service of children with a wide range of disabilities 
+                  such as Cerebral Palsy, Autism, mental retardation, learning disability, Attention deficit 
+                  disorder, Behaviour disorder, speech and language disorders etc. We at Hopeshore offer 
+                  complete range of clinical services from pediatric assessment to therapies. Education and 
+                  therapies like occupational therapy, speech therapy, psychotherapy, physiotherapy and 
+                  remedial education are provided completely free of cost for underprivileged children." </p>
                </div>
               <div class="col-sm-4 foocol">
                 <h4 class="text-white fh4">Categories</h4>
-                <i class="text-white" > <a href="electronics.html" style="text-decoration: none; list-style:none; display:inline-block;">Palm Flowers</a></i> <br />
+                <i class="text-white" > <a href="Palm Flowers.html" style="text-decoration: none; list-style:none; display:inline-block;">Palm Flowers</a></i> <br />
                 <i class="text-white" > <a href="mobiles.html" style="text-decoration: none; list-style:none; display:inline-block;">Graden Flowers</a></i> <br />
                 <i class="text-white" > <a href="laptops.html" style="text-decoration: none; list-style:none; display:inline-block;">Sticks</a></i> <br />
                 <i class="text-white" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block;">Wall Hanging</a></i> <br />
@@ -409,5 +432,6 @@
 
     <script src="node_modules\jquery\dist\jquery.js"></script>
     <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+    <script src="js/Script.js"></script>
 </body>
 </html>

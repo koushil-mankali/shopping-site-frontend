@@ -200,3 +200,47 @@
     text-transform: uppercase;
 }
 /*------------------------------------------------Footer------------------------------------------------- */
+
+/* ----------------------------------- nav menu---------------------------------------------------------- */
+#menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;  }
+
+#side-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;  width: 250px;  height: 100vh;  background-color: #fff;
+    transition: all 0.3s ease-in-out;  }
+
+#side-menu.open {  left: 0;
+}
+
+#side-menu ul {
+    list-style: none;
+    padding: 20px;
+}
+
+#side-menu li {
+    margin-bottom: 15px;
+}
+
+#side-menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* ----------------------------------- nav menu---------------------------------------------------------- */

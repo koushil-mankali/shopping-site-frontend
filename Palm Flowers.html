@@ -13,20 +13,27 @@
 <body>
   <!------------------------------------------------------Header---------------------------------------------------->
     <nav class="navbar navbar-expand-lg navbar-light bg-white" style="max-height:70px;z-index:10;">
+        <button id="menu-button">&#9776;</button> 
+        <nav id="side-menu">
+            <button id="close-button">X</button>
+            <!--  Side menu will go here -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Palm Flowers.html">Palm Flowers</a></li>
+                <li><a href="#">Graden Flowers</a></li>
+                <li><a href="#">Sticks</a></li>
+                <li><a href="#">Wall Hanging</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">flower basket</a></li>
+                <li><a href="#">deco rose</a></li>
+                <li><a href="#">bamboo</a></li>
+                <li><a href="#">Offer Zone</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
         <a class="navbar-brand" href="index.html"><span id="bd-title"><img src="images/logo.jpg" style="max-height:50px;">Hopeshore</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navdp" aria-controls="navdp" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse bg-white" style="width:100%;" id="navdp">
-          <form class="form-inline bg-white  my-2 my-lg-0 mrl">
-            <input class="form-control mr-sm-2 srh-w bg-white" style="width:500px;" type="search" placeholder="Search..." aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-          <button type="button" class="btn btn-danger reg1">Sign In</button>
-          <button type="button" class="btn btn-info reg2"><i class="fas fa-shopping-cart"> Cart</i>
-            &nbsp;<span class="badge badge-light">0</span>
-          </button>
-        </div>
       </nav>
       <nav class="nav2">
         <ul class="ul2">
@@ -162,7 +169,7 @@
                </div>
               <div class="col-sm-4 foocol">
                 <h4 class="text-white fh4">Categories</h4>
-                <i class="text-white" > <a href="electronics.html" style="text-decoration: none; list-style:none; display:inline-block;">Palm Flowers</a></i> <br />
+                <i class="text-white" > <a href="Palm Flowers.html" style="text-decoration: none; list-style:none; display:inline-block;">Palm Flowers</a></i> <br />
                 <i class="text-white" > <a href="mobiles.html" style="text-decoration: none; list-style:none; display:inline-block;">Graden Flowers</a></i> <br />
                 <i class="text-white" > <a href="laptops.html" style="text-decoration: none; list-style:none; display:inline-block;">Sticks</a></i> <br />
                 <i class="text-white" > <a href="#" style="text-decoration: none; list-style:none; display:inline-block;">Wall Hanging</a></i> <br />
@@ -201,6 +208,7 @@
 
     <script src="node_modules\jquery\dist\jquery.js"></script>
     <script src="node_modules\bootstrap\dist\js\bootstrap.js"></script>
+    <script src="js/Script.js"></script>
 </body>
 
 </html>
