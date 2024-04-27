@@ -244,3 +244,34 @@
 }
 
 /* ----------------------------------- nav menu---------------------------------------------------------- */
+
+/* Aboutus */
+/* image text */
+.container {
+    display: flex; /* Make the container a flexbox */
+}
+
+.text-content {
+    flex: 1; /* Allocate space for the text content */
+    padding: 20px;
+}
+
+.image-container {
+    background-color: #f1f1f1; /* Set background color for the image area */
+    padding: 20px;
+    display: flex; /* Make the image area a flexbox for alignment */
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center content horizontally within the image area */
+}
+
+.image-container img {
+    width: 100%; /* Make the image fit the width of the image container */
+    max-height: 300px; /* Set a maximum height for the image (optional) */
+}
+
+.image-container p {
+    margin-top: 10px; /* Add spacing between image and caption */
+    text-align: center; /* Center caption text */
+}
+/* image text */
+/* Aboutus */
