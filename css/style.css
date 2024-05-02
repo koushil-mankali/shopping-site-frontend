@@ -186,8 +186,14 @@ img {
 
 
 
-
-
+/* phone re */
+/* Responsive layout for mobile (2 boxes per row) */
+@media only screen and (max-width: 768px) {
+    .product-box {
+        width: 48%;
+    }
+}
+/* phone re */
 
 
 
