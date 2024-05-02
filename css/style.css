@@ -11,7 +11,7 @@
 /*------------------------------------------------------Header----------------------------------------------------*/
 #bd-title{
     font-size:25px;
-    font-family: '', cursive;
+    font-family: '';
 }
 @media all and (min-width:900px){
     .mrl{
@@ -123,55 +123,54 @@
   justify-content: space-around;
   
 }
-/* Target the card element with the class "card2sty" */
-.card2sty {
-    /* Adjust width as needed based on your layout (consider using flexbox for responsiveness) */
-    width: 80%; /* Example width, adjust as needed */
-    margin: 30px; /* Add spacing between cards */
-    border-radius: 30px; /* Maintain rounded corners */
-    overflow: hidden; /* Prevent image overflow if necessary */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
-  }
-  
-  /* Style the image within the card */
-  .card2sty img {
-    margin: 10; /* Remove extra margin */
-    transition: transform 0.3s ease-in-out; /* Add smooth hover effect (optional) */
-  }
-  
-  /* Apply hover effect on the image (optional) */
-  .card2sty img:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-  }
-  
-  /* Style the card title (h4 element) */
-  .card2sty h4.cd-title {
-    margin: 10px 0; /* Add spacing above and below the title */
-    font-weight: bold; /* Make the title stand out */
-  }
-  
-  /* Style the card text (p element) */
-  .card2sty p.card-text.txt-sz {
-    margin-bottom: 10px; /* Add spacing below the text */
-    font-size: 14px; /* Adjust font size as needed */
-  }
-  
-  /* Style the "Buy" button */
-  .card2sty a.btn.btn-warning.bb-btn {
-    position: absolute;
-    bottom: 0px;
-    margin: 10 auto ;
-  border-radius: 50px; /* Adjust the radius for your desired roundness */
-  padding: 10px 20px; /* Adjust padding as needed */
-  background-color: #cda05c;
-  justify-content: space-around;
-  }
-  
-  /* Hover effect on the button (optional) */
-  .card2sty a.btn.btn-warning.bb-btn:hover {
-    background-color: #ff9800; /* Slightly darker orange on hover */
-  }
-  
+/* box buy product */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-box {
+    width: 24%; /* Adjust width as needed */
+    margin: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+img {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: fill; /* Scale image to fit box */
+}
+
+.product-info {
+    padding: 10px;
+}
+
+.rating {
+    font-size: 14px;
+    color: #f0ad4e;
+}
+
+.price {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.buy-button {
+    background-color: #cda05c;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 10px;
+}
+.buy-button:hover {
+    transform: scale(1.05);
+}
 
 /*------------------------------------------------------Card2----------------------------------------------------*/
 
@@ -307,18 +306,18 @@
 .image-container {
     background-color: #f1f1f1; /* Set background color for the image area */
     padding: 20px;
-    display: flex; /* Make the image area a flexbox for alignment */
+    display: flow-root; /* Make the image area a flexbox for alignment */
     flex-direction: column; /* Stack image and caption vertically */
     align-items: center; /* Center content horizontally within the image area */
 }
 
 .image-container img {
     width: 100%; /* Make the image fit the width of the image container */
-    max-height: 300px; /* Set a maximum height for the image (optional) */
+    max-height: 200px; /* Set a maximum height for the image (optional) */
 }
 
 .image-container p {
-    margin-top: 10px; /* Add spacing between image and caption */
+    margin-top: 100px; /* Add spacing between image and caption */
     text-align: center; /* Center caption text */
 }
 /* image text */
