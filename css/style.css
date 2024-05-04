@@ -196,7 +196,7 @@ img {
 /* Responsive layout for mobile (2 boxes per row) */
 @media only screen and (max-width: 768px) {
     .product-box {
-        width: 38%;
+        width: 40%;
     }
 }
 /* phone re */
