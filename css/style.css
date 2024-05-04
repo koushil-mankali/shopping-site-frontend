@@ -12,6 +12,34 @@
 #bd-title{
     font-size:25px;
 }
+
+
+.navbar-brand {
+    display: flex; /* Use flexbox for alignment and responsiveness */
+    align-items: center; /* Align logo and text vertically */
+    text-decoration: none; /* Remove default underline from anchor tag */
+  }
+  
+  .navbar-brand img {
+    max-height: 50px; /* Set maximum logo height */
+    width: auto; /* Allow logo width to adjust proportionally */
+    margin-right: 10px; /* Add space between logo and text (optional) */
+  }
+  
+  /* Responsive adjustments for smaller screens (iPhones and similar): */
+  @media only screen and (max-width: 768px) {
+    .navbar-brand {
+      /* Adjust these properties as needed for your specific layout */
+      flex-direction: column; /* Stack logo and text vertically on small screens */
+      align-items: center;  /* Center content in the column */
+    }
+  
+    .navbar-brand img {
+      margin-bottom: 5px; /* Add spacing between logo and text on smaller screens */
+    }
+  }
+  
+
 @media all and (min-width:900px){
     .mrl{
         margin-left:200px;
