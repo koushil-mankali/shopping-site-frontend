@@ -87,6 +87,7 @@
 .banner-link{
     text-decoration: none;
     list-style:none;
+    object-fit: contain;
 }
 /*------------------------------------------------------Banner----------------------------------------------------*/
 
@@ -97,11 +98,15 @@
     padding-top:5px;
     padding-left:20px; 
     padding-bottom:20px;
-    background-color:#00DED1;
+    background-color:#cda05c;
+    color: rgb(255, 255, 255);
     max-width:330px;
     max-height:40px;
     border-radius:30px;
+    text-align: center;
+    align-items: center;
 }
+
 
 .cd-title{
     font: 1em Arial, sans-serif;
@@ -142,7 +147,8 @@
 img {
     width: 100%;
     height: 200px; /* Adjust height as needed */
-    object-fit: fill; /* Scale image to fit box */
+    object-fit: contain; /* Scale image to fit box */
+    border-radius: 15px;
 }
 
 .product-info {
@@ -160,7 +166,7 @@ img {
 }
 
 .buy-button {
-    background-color: #cda05c;
+    background-color: #000000;
     color: rgb(255, 255, 255);
     padding: 10px 15px;
     border: none;
@@ -226,7 +232,7 @@ img {
 }
 .foocol{
     min-height:300px;
-    background-color: #172337; 
+    background-color: #000000; 
 }
 @media all and (min-width:576px){
     .foocol{
@@ -242,7 +248,7 @@ img {
     }
 }
 .foocol-2{
-    background-color: #172337; 
+    background-color: #000000; 
     height: fit-content;
 }
 .foocol:last-child{
