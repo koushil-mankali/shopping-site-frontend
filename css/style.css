@@ -46,7 +46,7 @@
   /* Default styles for all screen sizes */
   .image-box img {
     width: 100%;
-    height: auto; /* Maintain image aspect ratio */
+    height: 150%; /* Maintain image aspect ratio */
   }
   @media (max-width: 768px) {
     h2#banner-text {
@@ -197,12 +197,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border-radius: 5px
 }
 
 .product-box {
     width: 24%; /* Adjust width as needed */
     margin: 10px;
-    background-color: #f5f5f5;
+    background-color: #c6bcf78e;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center; 
@@ -212,7 +213,7 @@ img {
     width: 100%;
     height: 200px; /* Adjust height as needed */
     object-fit: contain; /* Scale image to fit box */
-    border-radius: 0px;
+    border-radius: 5px;
 }
 
 .product-info {
@@ -260,7 +261,7 @@ img {
 /* Responsive layout for mobile (2 boxes per row) */
 @media only screen and (max-width: 768px) {
     .product-box {
-        width: 40%;
+        width: 90%;
     }
 }
 /* phone re */
@@ -384,32 +385,63 @@ img {
 /* ----------------------------------- nav menu---------------------------------------------------------- */
 
 /* Aboutus */
-/* image text */
-.container {
-    display: flex; /* Make the container a flexbox */
+/* Shared styles */
+.content-wrapper,
+.text-section,
+.image-section {
+  display: flex; /* Use flexbox for layout control */
+  align-items: center; /* Vertically center content within sections */
 }
 
-.text-content {
-    flex: 1; /* Allocate space for the text content */
-    padding: 20px;
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px; /* Add a subtle border radius for visual appeal */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a light box-shadow for depth */
 }
 
-.image-container {
-    background-color: #f1f1f1; /* Set background color for the image area */
-    padding: 20px;
-    display: flow-root; /* Make the image area a flexbox for alignment */
-    flex-direction: column; /* Stack image and caption vertically */
-    align-items: center; /* Center content horizontally within the image area */
+.text-section {
+  flex: 1; /* Make text section take up remaining space */
+  padding-right: 20px;
 }
 
-.image-container img {
-    width: 100%; /* Make the image fit the width of the image container */
-    max-height: 200px; /* Set a maximum height for the image (optional) */
+.image-section {
+  justify-content: flex-end; /* Align image to the right within its section */
 }
 
-.image-container p {
-    margin-top: 100px; /* Add spacing between image and caption */
-    text-align: center; /* Center caption text */
+.image-section img {
+  height: 35px; /* Maintain image height */
+  border-radius: 50%; /* Add a circular shape to the image */
 }
-/* image text */
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* Phone Styles (Media Query) */
+@media only screen and (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack sections vertically on small screens */
+  }
+
+  .text-section,
+  .image-section {
+    width: 100%; /* Allow full width for sections on phones */
+    padding: 15px;
+  }
+
+  .text-section {
+    padding-right: 0; /* Remove right padding for smaller screens */
+    margin-bottom: 15px;
+  }
+
+  .image-section {
+    justify-content: center; /* Center image horizontally on phones */
+  }
+}
 /* Aboutus */
