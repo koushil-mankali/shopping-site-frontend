@@ -39,6 +39,69 @@
     }
   }
   
+  .image-box {
+    position: relative; /* Allows positioning of the overlay */
+  }
+  
+  /* Default styles for all screen sizes */
+  .image-box img {
+    width: 100%;
+    height: auto; /* Maintain image aspect ratio */
+  }
+  @media (max-width: 768px) {
+    h2#banner-text {
+      font-size: 1.2em;  /* Adjust as needed for phone view */
+    }
+  }
+
+  .image-box .text-overlay button {
+    font-size: 15px;
+    background-color: #7b066e6e ; /* Removes background color */
+    border: 1px solid #ffffff;
+    border-radius: 25px; /* Removes border */
+    border-color: #ffffff;
+    /* width: 20%;
+    height: 25%; */
+    color: inherit; /* Inherits color from parent element (likely dark) */
+    padding: 10px 20px; /* Adjust padding as needed */
+    cursor: pointer; /* Indicates clickable element */
+    position: absolute; /* Make button position relative to parent */
+  bottom: 10px; /* Place button 10px from the bottom */
+  left: 50%; /* Center button horizontally (adjust if needed) */
+  transform: translateX(-175%); /* Offset button to compensate for centering */
+
+    transition: background-color 0.2s ease-in-out; /* Smooth transition */
+  
+    /* Optional: Add a subtle border on hover */
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.1); /* Slightly transparent background on hover */ /* Thin border on hover */
+    }
+  }
+  
+  
+  
+  .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(178, 30, 144, 0.5); /* Semi-transparent black background */
+    color: white; /* White text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Media queries for phone responsiveness */
+  @media (max-width: 768px) {
+    .image-box {
+      width: 100vw; /* Set width to 100% of viewport width */
+      height: auto; /* Adjust height as needed for phone layout */
+    }
+  }
+  
+  
 
 @media all and (min-width:900px){
     .mrl{
