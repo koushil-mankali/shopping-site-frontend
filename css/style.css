@@ -10,7 +10,7 @@
 } 
 /*------------------------------------------------------Header----------------------------------------------------*/
 #bd-title{
-    font-size:25px;
+    font-size:24px;
 }
 
 
@@ -56,19 +56,17 @@
 
   .image-box .text-overlay button {
     font-size: 15px;
-    background-color: #7b066e6e ; /* Removes background color */
+    background-color: #ffffff00 ; /* Removes background color */
     border: 1px solid #ffffff;
     border-radius: 25px; /* Removes border */
     border-color: #ffffff;
-    /* width: 20%;
-    height: 25%; */
     color: inherit; /* Inherits color from parent element (likely dark) */
     padding: 10px 20px; /* Adjust padding as needed */
     cursor: pointer; /* Indicates clickable element */
     position: absolute; /* Make button position relative to parent */
   bottom: 10px; /* Place button 10px from the bottom */
   left: 50%; /* Center button horizontally (adjust if needed) */
-  transform: translateX(-175%); /* Offset button to compensate for centering */
+  transform: translateX(-50%); /* Offset button to compensate for centering */
 
     transition: background-color 0.2s ease-in-out; /* Smooth transition */
   
@@ -86,7 +84,7 @@
     left: 10;
     width: 100%;
     height: 100%;
-    background-color: rgba(178, 30, 144, 0.5); /* Semi-transparent black background */
+    background-color: rgba(255, 255, 255, 0); /* Semi-transparent black background */
     color: white; /* White text color */
     display: flex;
     justify-content: center;
@@ -149,29 +147,6 @@
     }
 }
 /*------------------------------------------------------Nav----------------------------------------------------*/
-/*------------------------------------------------------Cards----------------------------------------------------*/
-.card-icon{
-    height: 30px;
-    width:30px;
-    background-color:#ca0075;
-    border-radius:50%;
-}
-
-.bb-btn1{
-    position: relative;
-    bottom: -15px;
-    margin: 10 auto;
-  border-radius: 50px; /* Adjust the radius for your desired roundness */
-  padding: 10px 20px; /* Adjust padding as needed */
-  background-color: #cda05c;
-}
-.card{
-    display: flex;
-    justify-content: center;
-}
-
-/*------------------------------------------------------Cards----------------------------------------------------*/
-
 /*------------------------------------------------------Banner----------------------------------------------------*/
 
 .banner-link{
