@@ -64,7 +64,7 @@
     padding: 10px 20px; /* Adjust padding as needed */
     cursor: pointer; /* Indicates clickable element */
     position: absolute; /* Make button position relative to parent */
-  bottom: 10px; /* Place button 10px from the bottom */
+  bottom: 25px; /* Place button 10px from the bottom */
   left: 50%; /* Center button horizontally (adjust if needed) */
   transform: translateX(-50%); /* Offset button to compensate for centering */
 
@@ -73,6 +73,7 @@
     /* Optional: Add a subtle border on hover */
     &:hover {
       background-color: rgba(0, 0, 0, 0.1); /* Slightly transparent background on hover */ /* Thin border on hover */
+      bottom: 25px; /* Place button 10px from the bottom */
     }
   }
   
@@ -488,12 +489,16 @@ nav a:hover {
   }
 
   .show {
-    display: block; /* Makes the navigation links visible */
+    position: relative;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    display: flex; /* Makes the navigation links visible */
   }
   
 
   .menu-toggle {
-    display: block; /* Show menu toggle button on small screens */
+    display: grid; /* Show menu toggle button on small screens */
     padding: 10px;
     cursor: pointer; /* Make it clickable */
   }
@@ -502,7 +507,7 @@ nav a:hover {
     display: block; /* Show the bars for the menu toggle button */
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: #000000;
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
   }
