@@ -449,6 +449,26 @@ p {
     justify-content: center; /* Center image horizontally on phones */
   }
 }
+
+/* about us para */
+#about-para {
+  max-width: 1200px; /* Adjust as needed for wider content */
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 20px;
+  font-family: sans-serif; /* Choose a suitable font */
+  line-height: 1.5; /* Adjust line spacing for readability */
+}
+
+#about-para h2 {
+  margin-bottom: 15px; /* Add space below heading */
+  font-size: 1.8em; /* Adjust heading size as needed */
+}
+
+#about-para p {
+  margin-bottom: 10px; /* Add space between paragraphs */
+}
+
+/* about us para */
 /* Aboutus */
 
 /* Header */
