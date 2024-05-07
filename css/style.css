@@ -591,7 +591,11 @@ nav a:hover {
   padding: 10px 20px; /* Button padding */
   cursor: pointer; /* Indicate hover effect */
   transition: background-color 0.3s ease-in-out; /* Add smooth transition on hover */
+  text-align: center;
+  flex-wrap: wrap-reverse;
 }
+
+
 
 .text-overlay button:hover {
   background-color: rgba(255, 255, 255, 0.2); /* White background with slight opacity on hover */
