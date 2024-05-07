@@ -276,7 +276,7 @@ img {
 /*------------------------------------------------Footer------------------------------------------------- */
 /* Footer styles */
 .footer {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     padding: 30px 0;
     text-align: center;  /* Center content horizontally */
   }
@@ -312,6 +312,7 @@ img {
   
   .footer-social {
     margin-top: 15px;
+    font-display: inherit;
   }
   
   .footer-social a {
@@ -547,3 +548,61 @@ nav a:hover {
 
 
 /* header */
+
+/* overlay text image */
+/* Image container */
+.image-container {
+  position: relative; /* Enable positioning of overlay elements */
+  overflow: hidden; /* Prevent text overlay from overflowing the image */
+}
+
+.image-container img.image {
+  width: 100%; /* Display image full-width */
+  height: auto; /* Maintain image aspect ratio */
+}
+
+/* Text overlay */
+.text-overlay {
+  position: absolute; /* Position overlay on top of the image */
+  bottom: 20px; /* Position text content at bottom with some space */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, 0); /* Adjust positioning for centering */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white; /* Text color */
+  padding: 20px; /* Add some padding for visual appeal */
+  text-align: center; /* Center text content */
+}
+
+.text-overlay h2 {
+  margin-bottom: 10px; /* Space below heading */
+  font-size: 1.5em; /* Adjust heading size as needed */
+}
+
+.text-overlay p {
+  line-height: 1.5; /* Adjust line spacing for readability */
+}
+
+/* Button */
+.text-overlay button {
+  background-color: transparent; /* Transparent background */
+  color: white; /* Button text color */
+  border: 2px solid #fff; /* White border */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 10px 20px; /* Button padding */
+  cursor: pointer; /* Indicate hover effect */
+  transition: background-color 0.3s ease-in-out; /* Add smooth transition on hover */
+}
+
+.text-overlay button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* White background with slight opacity on hover */
+}
+
+/* Phone Styles (Media Query) */
+@media only screen and (max-width: 768px) {
+  .text-overlay {
+    /* Wrap text content on smaller screens */
+    width: 100%;
+    white-space: wrap;
+    word-break: break-word;
+  }
+}
